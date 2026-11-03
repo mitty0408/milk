@@ -1514,7 +1514,7 @@ if (sessionId === currentSessionId) {
     const newCurrentId = sessionList[0].id;
     localforage.setItem(`${APP_PREFIX}customThemes`, customThemes);
     window.location.hash = newCurrentId;
-    window.location.reload();
+    //window.location.reload();
 } else {
     renderSessionList();
     showNotification('会话已删除', 'success');
@@ -1525,7 +1525,7 @@ if (sessionId === currentSessionId) {
                 if (sessionId !== SESSION_ID) {
                     if (confirm('切换会话将刷新页面，确定要继续吗？')) {
                         window.location.hash = sessionId;
-                        window.location.reload();
+                        //window.location.reload();
                     }
                 }
             }
